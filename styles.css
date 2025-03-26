@@ -1,0 +1,135 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de Inscrição */
+.top-bar {
+  background-color: orange;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Área de Publicidade */
+.ads {
+  text-align: center;
+  padding: 10px;
+  background: #f0f0f0;
+}
+
+.ad-placeholder {
+  background: #ddd;
+  padding: 15px;
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Layout Principal */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu lateral */
+.sidebar {
+  width: 25%;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.sidebar-title {
+  background: orange;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Conteúdo principal */
+.main-content {
+  width: 50%;
+}
+
+.main-content h1 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.main-content img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Barra lateral direita */
+.right-sidebar {
+  width: 25%;
+}
+
+.box {
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.yellow {
+  background: gold;
+}
+
+.orange {
+  background: orange;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: white;
+  border: 2px solid orange;
+  color: orange;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: orange;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content,
+  .right-sidebar {
+    width: 100%;
+  }
+}
